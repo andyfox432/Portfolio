@@ -1,0 +1,81 @@
+* {
+	text-shadow: 2px 2px 3px red;
+}
+
+div {
+	height: 150px;
+	width: 150px;
+	font-size: 20px;
+	border-top: solid red;
+	border-bottom: solid yellow;
+	border-left: solid green;
+	border-right: solid blue;
+	box-shadow: -3px -3px 3px brown;
+}
+
+img {
+	position: absolute;
+	top: 500px;
+}
+
+#box1 {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	font-family: 'Mountains of Christmas', cursive;
+}
+
+#box1:hover {
+	display: none;
+}
+
+#box2 {
+	position: absolute;
+	top: 100px;
+	left: 500px;
+	font-family: 'Alex Brush', cursive;
+}
+
+#box2:hover {
+	display: none;
+}
+
+#box3 {
+	position: absolute;
+	top: 300px;
+	left: 100px;
+	font-family: 'Source Code Pro', monospace;
+}
+
+#box3:hover {
+	transform: scale(1.5);
+	animation: Dancing;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+#box4 {
+	position: absolute;
+	top: 300px;
+	left: 500px;
+	font-family: 'Aldrich', sans-serif;
+}
+
+#box4:hover {
+	transform: scale(1.5);
+	animation: Dancing;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes Dancing {
+	10% {background-color:red}
+	20% {background-color:orange}
+	30% {background-color:yellow}
+	40% {background-color:greenyellow}
+	50% {background-color:blue}
+	60% {background-color:purple}
+	70% {background-color:coral}
+	80% {background-color:black}
+	90% {background-color:turquoise}
+}

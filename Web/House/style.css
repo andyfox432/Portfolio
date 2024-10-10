@@ -1,0 +1,466 @@
+body {
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+
+div {
+	position: absolute;
+     border: solid black 3px;
+     padding: 5px;
+ }
+
+.LSW {
+     background-color: #362312;
+	border: none;
+}
+
+.MW {
+	border: none;
+	background-color: aliceblue;
+}
+
+.LSWS {
+	background-color: #3B270C;
+	border: none;
+	width: 35px;
+	height: 120px;
+	transform: skewY(25deg);
+}
+
+.RT {
+	color: midnightblue;
+	border: none;
+}
+
+.Extra {
+	border: none;
+}
+
+.Window {
+	background-image: url(Window.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	height: 100px;
+	width: 50px;
+}
+
+.Window2 {
+	background-image: url(Window-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 100px;
+	width: 150px;
+}
+
+#LSWI {
+	height: 180px;
+	width: 220px;
+	top: 400px;
+	left: 25px;
+}
+
+#LSWII {
+	height: 110px;
+	width: 220px;
+	top: 290px;
+	left: 25px;
+}
+
+#LSWIII {
+	height: 170px;
+	width: 270px;
+	top: 400px;
+	left: 540px;
+}
+
+#LSWIV {
+	height: 100px;
+	width: 270px;
+	top: 290px;
+	left: 540px;
+}
+
+#LSWV {
+	  width: 0;
+      height: 0;
+      border-left: 140px solid transparent;
+      border-right: 140px solid transparent;
+      border-bottom: 170px solid #362312;
+	border-top: none;
+	top: 110px;
+	left: 535px;
+}
+
+#RSWI {
+	 border-bottom: 100px solid midnightblue;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+	border-top: none;
+      height: 0;
+      width: 180px;
+	top: 260px;
+	left: 795px;
+}
+
+#MWI {
+	height: 250px;
+	width: 230px;
+	top: 320px;
+	left: 300px;
+}
+
+#MWII {
+	height: 310px;
+	width: 60px;
+	top:60px;
+	left:640px;
+}
+
+#MWIII {
+	height: 200px;
+	width: 85px;
+	top:380px;
+	left:628px;
+}
+
+#MWIV {
+	height:200px;
+	width: 200px;
+	top: 370px;
+	left: 820px;
+}
+
+#LSWSI {
+	top: 310px;
+	left: 260px;
+}
+
+#LSWSII {
+	top: 430px;
+	left: 260px;
+}
+
+#LSWSIII {
+      width: 0px;
+	height: 0px;
+	border-left: 110.5px solid transparent;
+	border-right: 110.5px solid transparent;
+	border-bottom: 130px solid #362312;
+	border-top:  0px solid transparent;
+	top:150px;
+	left: 23px;
+}
+
+#RTII {
+	 width: 0;
+      height: 0px;
+      border-top: 95px solid;
+      border-left: 75px solid transparent;
+	border-right: transparent;
+	border-bottom: transparent;
+	top: 225px;
+	left: 230px;
+}
+
+#RTI {
+	 width: 240px;
+      height: 113px;
+      transform: skew(-16deg);
+	background-color: midnightblue;
+	top: 200px;
+	left: 330px;
+}
+
+#EI {
+	width: 22px;
+	height: 80px;
+	transform: skewX(-16deg);
+	top: 210px;
+	left: 300px;
+	background-color: aliceblue;
+}
+
+#EII {
+	width: 5px;
+	height: 280px;
+	top: 300px;
+	left: 250px;
+	background-color: #141728;
+}
+
+#EIII {
+	width: 150px;
+	height: 100px;
+	background-color: darkgreen;
+	border-radius: 100px / 90px;
+	top: 480px;
+	left: 200px;
+}
+
+#EIV {
+	height: 37px;
+	width: 20px;
+	background-color: aliceblue;
+	top: 163px;
+	left: 313px;
+}
+
+#EV {
+	border-bottom: 15px solid aliceblue;
+      border-left: 21px solid transparent;
+      border-right: 21px solid transparent;
+	transform: rotateZ(90deg);
+      height: 0;
+      width: 1px;
+	top: 175px;
+	left:329px;
+}
+
+#ERI {
+	height: 185px;
+	width: 3px;
+	background-color: #492000;
+	transform: rotateZ(40deg);
+	left: 67px;
+	top: 123px;
+}
+
+#ERII {
+	height: 200px;
+	width: 2px;
+	background-color: #492000;
+	transform: rotateZ(-39deg);
+	left: 190px;
+	top: 120px;
+}
+
+#ERIII {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 130px solid midnightblue;
+	transform: rotateZ(-43deg);
+	left:170px;
+	top: 116px;
+}
+
+#ERIV {
+	height: 22px;
+	width: 60px;
+	background-color: midnightblue;
+	transform: rotateZ(50deg);
+	left: 218px;
+	top: 248px;
+}
+
+#ERV {
+	 width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 25px solid midnightblue;
+	transform: rotateZ(23deg);
+	top: 277px;
+	left: 265px;
+}
+
+#ERVI {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid midnightblue;
+	top: 300px;
+	left: 295px;
+}
+
+#ERVII {
+	height: 185px;
+	width: 3px;
+	background-color: #492000;
+	transform: rotateZ(40deg);
+	top: 120px;
+	left: 590px;
+}
+
+#ERVIII {
+	height: 185px;
+	width: 3px;
+	background-color: #492000;
+	transform: rotateZ(-40deg);
+	top: 120px;
+	left: 755px;
+}
+
+#Inside {
+	background-image: url(Inside-1.jpg);
+	height: 95px;
+	width: 50px;
+	top: 465px;
+	left: 650px;
+	background-size: cover;
+	border: none;
+}
+
+#Door {
+	height: 110px;
+	width: 50px;
+	top: 450px;
+	left: 650px;
+	background-image: url(Door.png);
+	background-size: contain;
+	border: none;
+}
+
+#Door:hover {
+	height: 110px;
+	width: 70px;
+	top: 460px;
+	left: 630px;
+	background-image: url(Open-door.png);
+	background-size: cover;
+	border: none;
+}
+
+#Background1 {
+	background-image: url(room.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 70px;
+	width: 39px;
+	top:290px;
+	left:571px;
+}
+
+#Background2 {
+	background-image: url(room-2.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 70px;
+	width: 39px;
+	top:290px;
+	left:730px;
+}
+
+#Background3 {
+	background-image: url(room-3.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 70px;
+	width: 39px;
+	top:480px;
+	left:561px;
+}
+
+#Background4 {
+	background-image: url(room-4.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 70px;
+	width: 39px;
+	top:480px;
+	left:741px;
+}
+
+#Background5 {
+	background-image: url(book-room.jfif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 70px;
+	width: 120px;
+	top:310px;
+	left:70px;
+}
+
+#Background6 {
+	background-image: url(game-room.jfif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 70px;
+	width: 110px;
+	top:460px;
+	left:70px;
+}
+
+#WI {
+	top:260px;
+	left:570px;
+}
+
+#WII {
+	top:260px;
+	left:730px;
+}
+
+#WIII {
+	top:450px;
+	left:560px;
+}
+
+#WIV {
+	top:450px;
+	left:740px;
+}
+
+#WV {
+	background-image: url(Window-row.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	height: 150px;
+	width: 150px;
+	top:420px;
+	left:840px;
+}
+
+#Background7 {
+	background-image: url(Living-room-2.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 130px;
+	width: 150px;
+	top:420px;
+	left:840px;
+}
+
+#WVI {
+	background-image: url(Window-row.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	height: 150px;
+	width: 150px;
+	top:420px;
+	left:340px;
+}
+
+#Background8 {
+	background-image: url(Living-room.avif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	height: 130px;
+	width: 150px;
+	top:420px;
+	left:340px;
+}
+
+#WVII {
+	top:300px;
+	left:50px;
+}
+
+#WVIII {
+	top:450px;
+	left:50px;
+}

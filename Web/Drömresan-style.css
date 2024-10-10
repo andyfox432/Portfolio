@@ -1,0 +1,12 @@
+body {background-color: black}
+* {font-family: monospace; font-style: italic; font-weight: bold}
+p {color: white}
+h1 {color: chartreuse}
+h2 {color: darkmagenta}
+h3 {color: dimgray}
+h4 {color: forestgreen}
+ul {color: darkgoldenrod}
+img {height: 300px; border-style: solid; border-color: burlywood}
+#map-info {font-size: 10px}
+#fun-fact { font-size: 10px}
+a {color: red}

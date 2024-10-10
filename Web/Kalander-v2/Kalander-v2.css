@@ -1,0 +1,53 @@
+* {color: white;font-family: 'Mountains of Christmas', cursive;}
+
+html {overflow-x: hidden;}
+
+body {
+	background-color: black;
+	background-image: url(snow-icegif-29.gif);
+	background-size: cover;}
+
+h1 {
+	text-align: center;
+}
+
+.Calander {
+	display: flex;
+	flex-flow: wrap;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+.Calander .grid-item {
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	margin: 10px;
+	border:solid black;
+	color: blue;
+	font-size: 25px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 50%;}
+
+a {
+	text-decoration: none;
+	font-size: 70px;
+	color: pink;}
+
+.grid-item:hover {
+	animation: Color, Dance;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	text-shadow: 2px 2px 3px yellow;
+}
+
+@keyframes Color {
+	25% {background-color: #f02d2d}
+	50% {background-color: #61f02d}
+	75% {background-color: #2d2df0}
+}
+
+@keyframes Dance {
+	100%{transform: rotateZ(3600deg)}

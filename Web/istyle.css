@@ -1,0 +1,33 @@
+h1 {
+    text-decoration: ;
+}
+
+#I {color: red; font-family: cursive}
+#II {color: orange; font-family: fantasy}
+#III {color: yellow; font-family: inherit}
+#IV {color: green; font-family: monospace}
+
+h3 {background-color: blue; font-weight: 300}
+
+.X {text-decoration: underline; color: purple}
+
+.Y {text-decoration: line-through; color: aquamarine}
+
+div {height: 100px; width: 100px; border: dashed}
+
+#V {background-color: chocolate; }
+#VI {background-image: url(https://i.pinimg.com/564x/78/86/8e/78868e0a2f1f726f3556bb664d36a934.jpg); background-size: 100px}
+
+/*
+CSS-kod att använda er av:
+text-decoration: 
+color:
+background-color:
+background-image
+font-family:
+font-weight:
+height:
+width:
+border:
+*/ 
+

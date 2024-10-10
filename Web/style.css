@@ -1,0 +1,29 @@
+header {
+	text-align: center;
+    border: solid;
+    height: 200px;
+    width: auto;
+	background-image: radial-gradient(red, green, blue)
+}
+
+/* Här skriver du kod för alla dina
+div-boxar */
+div {
+	height: 100px;
+	width: 200px;
+	border-style:dashed double;
+	border-color: darkgreen;
+	background-image: linear-gradient(red, orange, yellow, green, blue, purple);
+	opacity: 0.21;
+}
+
+/* Här anropar du dina div boxar en och en med ID */
+
+
+footer {
+    margin-top: 100px;
+    border: solid;
+    height: 200px;
+    width: 99.7%;
+	background-image: linear-gradient(orange, green, purple)
+}

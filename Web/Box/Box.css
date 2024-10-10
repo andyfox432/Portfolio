@@ -1,0 +1,177 @@
+* {
+	color: #FDB750;
+}
+
+body {background-color: #141728;}
+
+div {border-radius: 69px;}
+
+#Search {
+	position: fixed;
+	top: 75px;
+	left: 50px;
+	border: solid;
+	height: 38px;
+	width: 90%;
+	border-radius: 69px;
+}
+#Search ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	border-radius: 69px;
+}
+#Search a {
+	float: left;
+	display: block;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	border-right: 5px solid #FD7F20;
+	min-width: 60px;}
+
+#Search a:hover {
+	background-color: #FD7F20;
+	animation: Shadow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	transform: scale(1.3,1.3);
+	transition: 0.5s;
+}
+
+#Top {
+	position: fixed;
+	left: 30px;
+	border: solid;
+	height: 50px;
+	width: 95%;
+	animation: Shadow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;}
+
+#Top h3 {
+	text-align: center;
+}
+
+#LR {
+	position: absolute;
+	top: 140px;
+	left: 50px;
+	border: solid;
+	height: 700px;
+	width: 100px;}
+.R {
+	position: absolute;
+	top: 30px;
+	left: 20px;}
+#Info {
+	position: absolute;
+	top: 140px;
+	left: 80px;
+	border: solid;
+	height: 800px;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#Wallpaper-box {
+	position: absolute;
+	top: 140px;
+	left: 175px;
+	border: solid;
+	height: 850px;
+	width: 850px;}
+#WB {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #FC2E20;
+	width:800px;
+	border-radius: 0px;}
+.Wallpaper {height: 100px}
+#WB div {
+	height: 100px;
+	margin: 5px;
+	border: solid black;
+	transition: 3s ease-in-out;
+	border-radius: 0px;
+}
+#WB div:hover {
+	transform: scale(3,3);
+}
+
+#FAQ {
+	position: absolute;
+	top: 140px;
+	left: 50px;
+	border: solid;
+	height: 500px;
+	width: 1100px}
+
+#Icon {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #FC2E20;
+	width: 800px;
+	border-radius: 0px}
+#Icon div {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+	border:solid black;
+	transition: 2s ease-in-out;
+	border-radius: 0px;}
+#Icon div:hover {
+	transform: scale(1.5,1.5);
+}
+#Icon img {height: 100px;}
+
+#Contact {
+	position: absolute;
+	top: 140px;
+	left: 35px;
+	border: solid;
+	height: 800px;
+	width: 1100px;}
+#Feedback {
+	position: absolute;
+	top: 140px;
+	left: 200px;
+	border: solid;
+	height: 700px;
+	width: 750px;}
+.FB-Comments {background-color: #FC2E20;
+	border-color: #FDB750}
+main {
+	position: absolute;
+	top: 25px;
+	left: 25px;}
+#Bottom {
+	position: absolute;
+	top: 1000px;
+	left: 1px;
+	border: solid;
+	height: 200px;
+	width: 99%;
+	background-size: contain}
+footer {
+	position: absolute;
+	top: 25px;
+	left: 25px;}
+
+.image {position: absolute;
+	height: 50px;}
+.Panal {background-color: #FC2E20;}
+.Text {background-color: #FD7F20;}
+button:active {background-color: aqua}
+li:nth-child(odd) {background-color: red}
+li:nth-child(even) {background-color: crimson}
+dt {background-color: crimson}
+dd {background-color: red}
+
+@keyframes Shadow {50% {text-shadow: 0px 0px 10px white}}
+
+/*Next Idea character info*/

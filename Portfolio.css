@@ -1,0 +1,1176 @@
+* {
+	color: aliceblue;
+}
+
+:root {
+	--cyan: #00ADB5;
+	--pog1: 0 0 15px;
+	--pog2: 0 0 30px;
+	--Current-Space: 0px;
+	--Spacing-Ratio: ;
+}
+
+*::selection {
+	color: var(--cyan);
+	background-color: #222831;
+}
+
+body {
+	background-color: #222831;
+	height: 0;
+}
+
+.Layout {
+	background-color: #141728;
+	transition: 2s;
+	box-shadow: 0 5px 10px black;
+}
+
+.Layout:hover {
+	box-shadow: 0 0 10px 10px var(--cyan);
+}
+
+/* ! Things in Header begins here*/
+header {
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 80px;
+	width: 100%;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#scroll-NTI {
+	position: absolute;
+	top: 11px;
+	left: 5%;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background-image: url(Photo/Scroll-NTI.jfif);
+	background-size: 130%;
+	background-position: center;
+	animation: autoRotate;
+	animation-timeline: scroll();
+}
+
+.Portfolio {
+	position: relative;
+	visibility: hidden;
+	color: transparent;
+	top: 10px;
+	left: 240px;
+	font-size: 25px;
+	margin-right: 300px;
+	float: left;
+}
+
+marquee {
+	position: relative;
+	top: 100px;
+	left: 0;
+	height: 30px;
+	background-color: #141728;
+	mask-image: linear-gradient(
+		to right,
+		transparent,
+		#000 1% 99%,
+		transparent
+	);
+	padding: 10px;
+	z-index: -1;
+	display: flex;
+	border-radius: 20px;
+}
+
+#Massage {
+	position: relative;
+	top: -20px;
+	width: max-content;
+	list-style: none;
+}
+
+#Massage li {
+	float: left;
+	font-size: 20px;
+	animation: Waving 2s infinite;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#NTI {
+	position: absolute;
+	top: 15px;
+	left: 18%;
+	height: 49px;
+	width: 175px;
+	margin-right: 20px;
+	border-radius: 10px;
+	float: left;
+}
+
+/*This is the navigation bar in the header*/
+#M1 {
+	position: relative;
+	top: 20px;
+	width: 600px;
+	height: 40px;
+	margin-left: 10px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	transition: 2s;
+}
+
+/*This it's the button in the header*/
+.btn {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	width: 100px;
+	cursor: pointer;
+	border: 3px solid var(--cyan);
+	margin-right: auto;
+	margin-bottom: 10px;
+	text-decoration: none;
+	line-height: 35px;
+	border-radius: 50px;
+	transition: 1s ease;
+}
+
+.btn:hover {
+	box-shadow: 0 0 25px var(--cyan);
+}
+
+.btn::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--cyan);
+	border-radius: 50% 50% 0 0;
+	z-index: -1;
+	transition: all 0.4s;
+}
+
+/*This is the prepiation to the filling effect from bottom to top*/
+.Upp::before {
+	top: 60px;
+}
+
+/*This is the prepiation to the filling effect from top to bottom*/
+.Down::before {
+	top: -60px;
+}
+
+/*This is to make the filling effect*/
+.btn:hover::before {
+	top: 0;
+	border-radius: 0;
+}
+/* ! Things in Header ends here */
+
+.Intro {
+	position: relative;
+	top: 140px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	animation: Ricking 60s;
+	animation-delay: 110s;
+}
+
+#IH {
+	height: 250px;
+	float: left;
+	background-image: url(Sound-wave.png);
+}
+
+.IHT {
+	position: relative;
+	top: 50px;
+	left: 100px;
+	width: 220px;
+	margin-bottom: 20px;
+}
+
+.Changing {
+	font-size: 21px;
+}
+
+.typed-cursor {
+	font-size: 24px;
+}
+
+/*Project page*/
+#PD {
+	position: relative;
+	z-index: -1;
+	top: 140px;
+	left: 0;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+}
+
+#PH {
+	position: absolute;
+	top: 0;
+}
+
+#PT {
+	position: relative;
+	top: 50px;
+	font-family: 'Cairo Play', sans-serif;
+}
+
+#IP {
+	position: relative;
+	top: 180px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#IP article {
+	position: relative;
+	width: 320px;
+	height: 169px;
+	padding: 15px;
+	background: linear-gradient(60deg, #151516 0%, #1d2229 100%);
+	overflow: hidden;
+	margin: 15px;
+	border-radius: 20px;
+}
+
+#IP article h2 {
+	z-index: 99;
+	position: absolute;
+	bottom: -20px;
+	right: 70px;
+	font-size: 35px;
+	font-weight: 700;
+	color: var(--cyan);
+	pointer-events: none;
+	transition: 0.2s ease;
+	box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+#IP article p {
+	z-index: 99;
+	position: absolute;
+	bottom: 80px;
+	right: 130px;
+	width: 150px;
+	color: #fff;
+	opacity: 0;
+	font-size: 12px;
+	text-align: right;
+	letter-spacing: 1px;
+	transition: 0.1s ease;
+}
+
+#IP article span {
+	z-index: 99;
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 1px;
+	writing-mode: vertical-lr;
+	transition: 0.2s ease;
+	opacity: 0.7;
+}
+
+#IP article .pic {
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	border-radius: 12px;
+	filter: grayscale(100%);
+	transition: 0.3s ease;
+}
+
+#IP article button {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	width: 30px;
+	height: 30px;
+	background-color: #772a9b;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	outline: none;
+	opacity: 1;
+	transition: 0.3s ease;
+}
+
+#IP article .Alert {
+	z-index: 99;
+	position: absolute;
+	bottom: 50px;
+}
+
+#IP article .RB {
+	position: absolute;
+	bottom: -80px;
+	right: 25px;
+	border: 0;
+	height: 10px;
+	width: 100px;
+	color: rgb(188, 182, 186);
+	padding: 10px 10px;
+	font-weight: bold;
+	background: rgb(64, 192, 87);
+	transition: all 0.2s ease-in-out;
+	border-radius: 10px;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+}
+
+#IP article:hover button {
+	position: absolute;
+	bottom: 60px;
+	transform: scale(10.5);
+	opacity: 0.5;
+}
+
+#IP article:hover h2 {
+	bottom: 103px;
+	right: 17px;
+}
+
+#IP article:hover p {
+	opacity: 1;
+	right: 20px;
+}
+
+#IP article:hover span {
+	opacity: 0;
+	top: 80px;
+}
+
+#IP article:hover .pic {
+	filter: grayscale(0);
+}
+
+#IP article:hover .Alert {
+	right: 20px;
+	opacity: 0.5;
+}
+
+#IP article:hover .RB {
+	bottom: 20px;
+}
+
+#IP article:hover .RB:hover {
+	background-image:
+		linear-gradient(
+			to right,
+			rgb(234, 97, 104),
+			rgb(234, 97, 104) 5%,
+			rgb(241, 140, 60) 5%,
+			rgb(241, 140, 60) 10%,
+			rgb(235, 185, 99) 10%,
+			rgb(235, 185, 99) 15%,
+			rgb(253, 254, 253) 15%,
+			rgb(253, 254, 253) 20%,
+			rgb(215, 166, 205) 20%,
+			rgb(215, 166, 205) 25%,
+			rgb(187, 90, 188) 25%,
+			rgb(187, 90, 188) 30%,
+			rgb(133, 44, 111) 30%,
+			rgb(133, 44, 111) 35%,
+			rgb(154, 198, 226) 35%,
+			rgb(154, 198, 226) 40%,
+			rgb(247, 207, 197) 40%,
+			rgb(247, 207, 197) 45%,
+			rgb(255, 253, 254) 45%,
+			rgb(255, 253, 254) 50%,
+			rgb(232, 72, 138) 50%,
+			rgb(232, 72, 138) 55%,
+			rgb(181, 139, 252) 55%,
+			rgb(181, 139, 252) 60%,
+			rgb(48, 89, 187) 60%,
+			rgb(48, 89, 187) 65%,
+			rgb(236, 69, 138) 65%,
+			rgb(236, 69, 138) 70%,
+			rgb(246, 199, 85) 70%,
+			rgb(246, 199, 85) 75%,
+			rgb(94, 182, 230) 75%,
+			rgb(94, 182, 230) 80%,
+			rgb(245, 199, 86) 80%,
+			rgb(245, 199, 86) 85%,
+			rgb(253, 255, 253) 85%,
+			rgb(253, 255, 253) 90%,
+			rgb(187, 90, 188) 90%,
+			rgb(187, 90, 188) 95%,
+			rgb(51, 43, 50) 95%,
+			rgb(51, 43, 50) 100%);
+	animation: 10s linear Rainbow infinite;
+	transform: scale(1.1);
+}
+
+/* ! Card-???*/
+#Card-Hus {
+	background-image: url(Photo/Mitt-Hus.png);
+}
+#Card-Box {
+	background-image: url(Photo/Box.png);
+}
+#Card-Calc {
+	background-image: url(Photo/Calculator.png);
+}
+#Card-Load-V2 {
+	background-image: url(Photo/Cool-loading.png);
+}
+#Card-Resa {
+	background-image: url(Photo/Dr%C3%B6mresa.png);
+}
+#Card-Web {
+	background-image: url(Photo/First-web.png);
+}
+#Card-Cand {
+	background-image: url(Photo/GodisKungen.png);
+}
+#Card-Input {
+	background-image: url(Photo/Input.png);
+}
+#Card-Kala {
+	background-image: url(Photo/Kalander.png);
+}
+#Card-Load {
+	background-image: url(Photo/Loading.png);
+}
+#Card-Type {
+	background-image: url(Photo/Typsnitt.png);
+}
+#Card-Glitch {
+	background-image: url(Photo/Glitch.png);
+}
+#Card-To-Do {
+	background-image: url(Photo/To-Do.png);
+}
+#Card-Sticky-note {
+	background-image: url(Photo/Sticky-note.png);
+}
+#Card-CountDown {
+	background-image: url(Photo/CountDown.png);
+}
+#Card-Scroll-flame {
+	background-image: url(Photo/Scroll-Flame.png);
+}
+/*This is the main subject in Project page Ends*/
+
+/* ! This is where to main thing in FAQ page begins*/
+#IF {
+	position: relative;
+	top: 140px;
+	height: 400px;
+	text-align: center;
+}
+
+#FAQ {
+	position: absolute;
+	margin: 0 40px;
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+}
+
+.IFT {
+	position: relative;
+	margin-bottom: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#FAQ .Que {
+	position: relative;
+	padding: 0 20px 20px;
+	background-color: #333333;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+#FAQ .Que input {
+	appearance: none;
+}
+
+#FAQ .Que label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+#FAQ .Que label h2 {
+	margin-right: 20px;
+}
+
+#FAQ .Que label h3 {
+	z-index: 10;
+}
+
+#FAQ .Que .Ans {
+	max-height: 0;
+	transition: 1s ease;
+	overflow: hidden;
+}
+
+#FAQ .Que label::after {
+	content: "+";
+	position: absolute;
+	color: aliceblue;
+	right: 20px;
+	font-size: 30px;
+	transition: 1s ease;
+}
+
+#FAQ .Que:hover label::after {
+	color: forestgreen;
+}
+
+#FAQ .Que input:checked ~ label::after {
+	transform: rotate(135deg);
+}
+
+#FAQ .Que input:checked ~ .Ans {
+	max-height: fit-content;
+}
+/*This is where to main thing in FAQ page begins*/
+
+.IAT {
+	margin-left: 10px;
+}
+
+/*This is where the box in Home page begins*/
+#About {
+	position: relative;
+	top: 420px;
+	left: 0;
+	height: 400px;
+	z-index: -1;
+}
+
+.AT {
+	position: relative;
+	top: -200px;
+	width: 50%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#AL {
+	position: relative;
+	top: -160px;
+	margin-left: 10px;
+}
+/*This is the piller picture that grow bigger when you hover over it*/
+#Gallery {
+	position: relative;
+	top: -190px;
+	left: -0%;
+	width: 450px;
+	height: 230px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	float: left;
+	grid-gap: 10px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.Box {
+	position: relative;
+	top: 10px;
+	left: 0px;
+	width: 10%;
+	height: 200px;
+	margin-right: 20px;
+	border: 2px solid var(--cyan);
+	border-radius: 50px;
+	background: url(Photo/1683884755441.jpg);
+	background-size: cover;
+	background-position: center;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.Box:hover {
+	width: 25%;
+	cursor: pointer;
+}
+
+.Box h3 {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: bottom 0.5s, opacity 0.5s
+}
+
+.Box:hover h3 {
+	opacity: 1;
+	bottom: -5px;
+}
+
+.Box:nth-child(2) {
+	background: url(Photo/1683884908080.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.Box:nth-child(3) {
+	background: url(Photo/1683884984579.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.Box:nth-child(4) {
+	background: url(Photo/1683885048879.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-right: 0;
+}
+
+#LP {
+	position: relative;
+	top: 350px;
+	--current-Space: 350px;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+	z-index: -1;
+}
+
+.LT {
+	height: fit-content;
+	width: 100%;
+}
+
+/*This is where the language procentage bar in hom page begins*/
+#Procentbar {
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.Procentage {
+	position: relative;
+	top: 20px;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+.PBI {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: aliceblue;
+	font-size: 1.2em;
+	font-weight: 500;
+	text-align: center;
+}
+
+.PBT {
+	opacity: 0.5;
+}
+
+.counter {
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+.rating {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.block {
+	position: absolute;
+	width: 2px;
+	height: 15px;
+	background-color: #000;
+	left: 50%;
+	opacity: 0;
+	transform-origin: 50% 100px;
+	animation: animate 0.1s linear forwards;
+}
+
+.B1:nth-child(-n+58) {
+	background-color: crimson;
+	box-shadow: var(--pog1) crimson, var(--pog2) crimson;
+}
+
+.B2:nth-child(-n+41) {
+	background-color: cyan;
+	box-shadow: var(--pog1) cyan, var(--pog2) cyan;
+}
+
+.B3:nth-child(-n+4) {
+	background-color: yellow;
+	box-shadow: var(--pog1) yellow, var(--pog2) yellow;
+}
+/*This is where the language procentage bar in hom page ends*/
+
+/* ! Projects: Beginning (Home page) */
+#Pride {
+	position: relative;
+	top: 370px;
+	--Current-Space: 370px;
+	left: 0;
+	height: 490px;
+	z-index: -1;
+	text-align: center;
+}
+
+#HPT {
+	position: relative;
+	top: 20px;
+	margin-bottom: 20px;
+}
+
+iframe {
+	position: relative;
+	top: 20px;
+	width: 99.5%;
+	height: 230px;
+	margin-bottom: 20px;
+}
+
+#PRL {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -40px;
+}
+
+#AL {
+	text-align: center;
+}
+
+.OI {
+	width: 100px;
+	display: block;
+	text-decoration: none;
+	border: 2px solid var(--cyan);
+	border-radius: 30px;
+	padding: 14px 50px;
+	overflow: hidden;
+	transition: 1s all ease;
+}
+
+.OI::before {
+	background: var(--cyan);
+	content: "";
+	width: 80%;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: -1;
+	transition: all 0.6s ease;
+}
+
+#AL::before {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#AL:hover::before, #PRL:hover::before {
+	height: 360%;
+}
+
+#PRL::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.OI:hover {
+	box-shadow: 0 0 25px var(--cyan);
+	transform: 1.5s ease;
+}
+/* ! Projects: End (Home page) */
+
+#Hire {
+	position: relative;
+	top: 380px;
+	--Current-Space: 380px;
+	left: 0;
+	height: 240px;
+	width: 100%;
+	text-align: center;
+}
+
+.HT {
+	position: relative;
+	top: 20px;
+}
+
+#HL {
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100px;
+	display: block;
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 14px 50px;
+	margin: 30px 0;
+	border: 2px solid var(--cyan);
+	overflow: hidden;
+	transition: 1s all ease;
+}
+
+#HL:hover {
+	box-shadow: 0 0 25px var(--cyan);
+	transform: 1.5s ease;
+}
+
+#HL::before {
+	background-color: var(--cyan);
+	content: "";
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: -1;
+	transition: all 0.6s ease;
+}
+
+#HL:hover::before {
+	width: 100%;
+}
+
+.Music {
+	width: 330px;
+	height: 152px;
+	margin-left: 10px;
+	border: 0;
+	border-radius: 12px;
+}
+
+/* ! Footer: beginning (Every page) */
+Footer {
+	position: relative;
+	left: 0;
+	width: 100%;
+	height: fit-content;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#FH {
+	top: 420px;
+}
+
+#FP {
+	top: 220px;
+}
+
+#FF {
+	top: 170px;
+}
+
+#FA {
+	top: 240px;
+}
+
+/*This it's the links in footer with the underscore effect*/
+#M2 {
+	position: relative;
+	bottom: -20px;
+	height: 40px;
+	width: 50%;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-right: 200px;
+}
+
+.Link {
+	position: relative;
+	width: fit-content;
+	text-decoration: none;
+	color: gray;
+	font-size: 20px;
+	margin-right: 40px;
+}
+
+.Link::after {
+	content: "";
+	position: absolute;
+	background-color: var(--cyan);
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -7px;
+	transition: 0.5s;
+}
+
+.Link:hover {
+	color: aliceblue;
+}
+
+.Link:hover::after {
+	width: 100%;
+}
+
+#M3 {
+	position: relative;
+	height: 40px;
+	bottom: -20px;
+	margin-left: 10px;
+	margin-bottom: 50px;
+}
+
+.Media {
+	display: inline-flex;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	padding: 10px;
+	margin-right: 10px;
+	transition-duration: 0.25s;
+}
+
+#LinkIn:hover {
+	background-color: #0A66C2;
+}
+
+.Media:hover {
+	outline-offset: 4px;
+	animation: shake 1s;
+}
+
+#Insta:hover {
+	background-image: linear-gradient(to bottom right, #fec053, #F2203F, #A42EB1, #5442D6);
+}
+
+#Mail:hover {
+	background-image: linear-gradient(to bottom right, #728C00, #228b22, #114611);
+}
+
+#Twi:hover {
+	background-color: #1DA1F2;
+}
+
+.LD {
+	position: relative;
+	height: fit-content;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #202020;
+	box-shadow: 0 5px 10px black;
+	display: flex;
+	justify-content: space-around;
+}
+
+#LDH {
+	top: 420px;
+}
+
+#LDP {
+	top: 220px;
+}
+
+#LDF {
+	top: 220px;
+}
+
+#LDA {
+	top: 170px;
+}
+
+.LDT {
+	color: aliceblue;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 14px;
+	border-right: 5px solid red;
+	padding-right: 10px;
+	margin: 5px;
+}
+/* ! Footer: End */
+
+/*This is the things that makes the waving effect*/
+@keyframes Waving {
+	50% {transform: translateY(20px)}
+}
+
+@keyframes shake {
+	10% {transform: rotate(15deg);}
+	20% {transform: rotate(-15deg);}
+	30% {transform: rotate(15deg);}
+	40% {transform: rotate(-15deg);}
+}
+
+@keyframes Rainbow {
+  to {
+    background-position: 80px;
+  }
+}
+
+@keyframes animate {
+	to {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width:1058px) {
+	header {
+		height: 150px;
+	}
+	#PD {
+		top: 200px;
+	}
+	marquee {
+		top: 170px;
+	}
+	.Intro {
+		top: 200px;
+	}
+	#About {
+		top: 490px;
+	}
+	#LP {
+		top: 400px;
+	}
+	#Pride {
+		top: 420px;
+	}
+	#Hire {
+		top: 430px;
+	}
+	#FH, #LDH {
+		top: 460px;
+	}
+	#IP {
+		top: 250px;
+	}
+	#FP, #LDP, #LDF {
+		top: 300px;
+	}
+	#FF, #LDA {
+		top: 250px;
+	}
+	#IF {
+		top: 200px;
+	}
+}
+
+
+@media screen and (max-width:937px) {
+	#About {
+		height: 640px;
+	}
+	.AT {
+		width: 95%;
+	}
+	#LP{
+		top: 550px;
+	} 
+	#Pride{
+		top: 580px;
+	} 
+	#Hire {
+		top: 600px;
+	}
+	#FH, #LDH {
+		top: 630px;
+	}
+}
+
+@media screen and (max-width: 649px) {
+	#About {
+		height: 660px;
+	}
+}
+
+@media screen and (max-width: 612px) {
+	#About {
+		height: 670px;
+	}
+}
+
+@media screen and (max-width: 545px) {
+	#NTI {
+		margin-left: 10px;
+	}
+}
+@media screen and (max-width: 435px) {
+	#About {
+		height: 710px;
+	}
+}
+
+@media screen and (max-width:378px) {
+	#PD {
+		height: 200px;
+	}
+}
+
+/* ! Animations: beginning */
+@keyframes Ricking {
+	50% {background-image: url(Photo/rickroll-roll.gif)};
+}
+
+@keyframes autoRotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+/* ! Animations: End */
+
+/* ! Scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #fff;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 
+	TODO:
+	
+*/
