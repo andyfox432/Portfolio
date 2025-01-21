@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  90vh;
+    background: #000;
+}
+
+h2 {
+    font-size: 200px;
+    text-transform: uppercase;
+    background: linear-gradient(
+        45deg,
+        #ee6643, 
+        #ee7752, 
+        #e73c7e, 
+        #23a6d5,
+        #23d5ab,
+        #23ef4c
+        );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    line-height: 0.9;
+    animation: rainbow 5s ease-in-out infinite;
+}
+
+h2 span {
+    font-weight: 300;
+    font-size: 162px;
+    display: block;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}

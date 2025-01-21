@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: "Press Start 2P", monospace;
+    margin-top: 80px;
+}
+
+#HH {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3em;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#Meny {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#Meny .HH {
+    height: fit-content;
+    width: 100px;
+    list-style: none;
+    font-size: 2em;
+}

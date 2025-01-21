@@ -15,6 +15,11 @@
 	background-color: #222831;
 }
 
+*:focus-visible {
+	outline: 3px solid var(--cyan);
+	outline-offset: 2px;
+}
+
 body {
 	background-color: #222831;
 	height: 0;
@@ -326,7 +331,7 @@ marquee {
 	position: absolute;
 	bottom: -80px;
 	right: 25px;
-	border: 0;
+	border: none;
 	height: 10px;
 	width: 100px;
 	color: rgb(188, 182, 186);
@@ -427,11 +432,11 @@ marquee {
 #Card-Hus {
 	background-image: url(Photo/Mitt-Hus.png);
 }
+#Card-Hacker {
+	background-image: url(Photo/Hacker-Effect.png);
+}
 #Card-Box {
 	background-image: url(Photo/Box.png);
-}
-#Card-Calc {
-	background-image: url(Photo/Calculator.png);
 }
 #Card-Load-V2 {
 	background-image: url(Photo/Cool-loading.png);
@@ -472,7 +477,10 @@ marquee {
 #Card-Scroll-flame {
 	background-image: url(Photo/Scroll-Flame.png);
 }
-/*This is the main subject in Project page Ends*/
+#Card-GTE {
+	background-image: url(Photo/Gradient-Text-Effect.png);
+}
+/* This is the main subject in Project page Ends*/
 
 /* ! This is where to main thing in FAQ page begins*/
 #IF {
@@ -554,6 +562,8 @@ marquee {
 
 .IAT {
 	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
 
 /*This is where the box in Home page begins*/
@@ -580,12 +590,12 @@ marquee {
 	top: -160px;
 	margin-left: 10px;
 }
-/*This is the piller picture that grow bigger when you hover over it*/
+/*This is the pillar picture that grow bigger when you hover over it*/
 #Gallery {
 	position: relative;
 	top: -190px;
 	left: -0%;
-	width: 450px;
+	width: 500px;
 	height: 230px;
 	display: flex;
 	flex-wrap: wrap;
@@ -608,7 +618,7 @@ marquee {
 	margin-right: 20px;
 	border: 2px solid var(--cyan);
 	border-radius: 50px;
-	background: url(Photo/1683884755441.jpg);
+	background: url(Photo/1737196012989.jpg);
 	background-size: cover;
 	background-position: center;
 	transition: 0.5s;
@@ -635,18 +645,24 @@ marquee {
 }
 
 .Box:nth-child(2) {
-	background: url(Photo/1683884908080.jpg);
+	background: url(Photo/1683884755441.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .Box:nth-child(3) {
-	background: url(Photo/1683884984579.jpg);
+	background: url(Photo/1683884908080.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .Box:nth-child(4) {
+	background: url(Photo/1683884984579.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.Box:nth-child(5) {
 	background: url(Photo/1683885048879.jpg);
 	background-size: cover;
 	background-position: center;
@@ -825,6 +841,7 @@ iframe {
 	height: 240px;
 	width: 100%;
 	text-align: center;
+	justify-content: center;
 }
 
 .HT {
@@ -832,28 +849,41 @@ iframe {
 	top: 20px;
 }
 
-#HL {
+.Hire-List {
+	position: relative;
+	top: 10px;
+	left: 25%;
+	width: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;;
+	gap: 20px;
+}
+
+.HL {
 	position: relative;
 	top: 10%;
-	left: 50%;
-	transform: translate(-50%);
 	width: 100px;
 	display: block;
 	text-decoration: none;
 	border-radius: 50px;
 	padding: 14px 50px;
-	margin: 30px 0;
+	margin: 5px 0;
 	border: 2px solid var(--cyan);
 	overflow: hidden;
 	transition: 1s all ease;
 }
 
-#HL:hover {
+#CV {
+	width: 120px;
+}
+
+HL:hover {
 	box-shadow: 0 0 25px var(--cyan);
 	transform: 1.5s ease;
 }
 
-#HL::before {
+.HL::before {
 	background-color: var(--cyan);
 	content: "";
 	width: 0;
@@ -866,7 +896,7 @@ iframe {
 	transition: all 0.6s ease;
 }
 
-#HL:hover::before {
+.HL:hover::before {
 	width: 100%;
 }
 
@@ -1117,6 +1147,9 @@ Footer {
 	#About {
 		height: 660px;
 	}
+	.Hire-List {
+		width: 300px;
+	}
 }
 
 @media screen and (max-width: 612px) {
@@ -1128,6 +1161,13 @@ Footer {
 @media screen and (max-width: 545px) {
 	#NTI {
 		margin-left: 10px;
+	}
+	#Hire {
+		height: 280px;
+	}
+	#Gallery {
+		left: 30px;
+		width: 400px;
 	}
 }
 @media screen and (max-width: 435px) {
