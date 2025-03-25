@@ -480,85 +480,10 @@ marquee {
 #Card-GTE {
 	background-image: url(Photo/Gradient-Text-Effect.png);
 }
+#Card-Bezier {
+	background-image: url(Photo/Cubic-Bezier.png);
+}
 /* This is the main subject in Project page Ends*/
-
-/* ! This is where to main thing in FAQ page begins*/
-#IF {
-	position: relative;
-	top: 140px;
-	height: 400px;
-	text-align: center;
-}
-
-#FAQ {
-	position: absolute;
-	margin: 0 40px;
-	max-width: 900px;
-	display: flex;
-	flex-direction: column;
-}
-
-.IFT {
-	position: relative;
-	margin-bottom: 25px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-#FAQ .Que {
-	position: relative;
-	padding: 0 20px 20px;
-	background-color: #333333;
-	border-radius: 10px;
-	margin-bottom: 10px;
-	overflow: hidden;
-}
-
-#FAQ .Que input {
-	appearance: none;
-}
-
-#FAQ .Que label {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-}
-
-#FAQ .Que label h2 {
-	margin-right: 20px;
-}
-
-#FAQ .Que label h3 {
-	z-index: 10;
-}
-
-#FAQ .Que .Ans {
-	max-height: 0;
-	transition: 1s ease;
-	overflow: hidden;
-}
-
-#FAQ .Que label::after {
-	content: "+";
-	position: absolute;
-	color: aliceblue;
-	right: 20px;
-	font-size: 30px;
-	transition: 1s ease;
-}
-
-#FAQ .Que:hover label::after {
-	color: forestgreen;
-}
-
-#FAQ .Que input:checked ~ label::after {
-	transform: rotate(135deg);
-}
-
-#FAQ .Que input:checked ~ .Ans {
-	max-height: fit-content;
-}
-/*This is where to main thing in FAQ page begins*/
 
 .IAT {
 	margin-left: 10px;

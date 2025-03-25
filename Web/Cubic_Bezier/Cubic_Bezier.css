@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.list .item {
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s cubic-bezier(0.29, -0.81, 0.42, 1.68);
+}
+
+.list .item:hover {
+    width: 300px;
+}
+
+.list .item img {
+    width: 300px;
+}
